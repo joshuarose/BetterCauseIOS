@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SwitchBoard.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) SwitchBoard *switchBoard;
 
 @end

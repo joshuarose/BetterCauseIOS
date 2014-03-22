@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 @implementation AppDelegate
+@synthesize switchBoard;
 
 @synthesize window = _window;
 
@@ -16,7 +17,9 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    //self.window.backgroundColor = [UIColor whiteColor];
+    self.switchBoard = [SwitchBoard alloc];
+    [self.window addSubview: switchBoard.view];
     [self.window makeKeyAndVisible];
     return YES;
 }
